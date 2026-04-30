@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Cloud VM</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://copy.sh/v86/build/v86.js"></script>
+</head>
+<body>
+
+<h1>🌐 Cloud VM</h1>
+
+<div class="panel">
+  <input type="file" id="isoInput"><br>
+
+  <label>RAM</label>
+  <select id="ram">
+    <option value="128">128MB</option>
+    <option value="256">256MB</option>
+    <option value="512">512MB</option>
+    <option value="768">768MB</option>
+  </select>
+
+  <button onclick="startVM()">起動</button>
+</div>
+
+<div id="screen"></div>
+
+<script src="app.js"></script>
+</body>
+</html>
